@@ -1,18 +1,10 @@
 public class ServiceStation {
 
-    public void check(Car car, Bicycle bicycle, Truck truck) {
-        if (car != null) {
-            System.out.println("Обслуживаем " + car.getModelName());
-            car.service();
-        } else if (truck != null) {
+    public void check(Transport transport) {
 
-            System.out.println("Обслуживаем " + truck.getModelName());
-            truck.service();
+            System.out.println("Обслуживаем " + transport.getModelName());
+            transport.service();
 
-        } else if (bicycle != null) {
-            System.out.println("Обслуживаем " + bicycle.getModelName());
-            bicycle.service();
-        }
     }
 }
 
